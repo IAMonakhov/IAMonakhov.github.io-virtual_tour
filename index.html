@@ -1,1 +1,912 @@
-<div style="color: red">test</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+<style>
+#panorama {
+    width: auto;
+    height: 600px;
+}
+#panorama1 {
+    width: auto;
+    height: 600px;
+}
+.pnlm-about-msg {
+   visibility: hidden;
+    a {
+        visibility: hidden;
+      }
+  }
+div.pnlm-tooltip img {
+height: 100px;
+width: 100px;
+}
+body {
+margin: 0;
+padding: 0;
+}
+</style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {   
+"default": {
+    "firstScene": "vhod",
+    "sceneFadeDuration": 1000
+},
+"autoLoad": true,
+"scenes": {
+
+// ---- 1 ЭТАЖ -----
+
+    "vhod": {
+        "title": "Вход",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 5,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/1 этаж/вход.jpg",
+        "hotSpots": [
+            {
+                "pitch": 2.8,
+                "yaw": 7.9,
+                "type": "scene",
+                "text": "Холл 1 этажа",
+                "sceneId": "hall"
+            },
+
+        ]
+    },
+
+    "hall": {
+        "title": "Холл 1 этажа",
+        "hfov": 110,
+        "yaw": 5,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/1 этаж/холл.jpg",
+        "hotSpots": [
+            {
+                "pitch": -0.1,
+                "yaw": -8,
+                "type": "scene",
+                "text": "Вход",
+                "sceneId": "vhod",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": 4.1,
+                "yaw": 84,
+                "type": "scene",
+                "text": "Коридор 1 этажа",
+                "sceneId": "coridor1",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": 1.1,
+                "yaw": -94,
+                "type": "scene",
+                "text": "Коридор 1 этажа",
+                "sceneId": "coridor2",
+                "targetYaw": -23,
+                "targetPitch": 2
+            }
+        ]
+    },
+
+    "coridor1": {
+        "title": "Коридор 1 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/1 этаж/коридор1.jpg",
+        "hotSpots": [
+            {
+                "pitch": -1.8,
+                "yaw": 0,
+                "type": "scene",
+                "text": "Холл 1 этажа",
+                "sceneId": "hall"
+            },
+            {
+                "pitch": -8.1,
+                "yaw": 178,
+                "type": "scene",
+                "text": "2 этаж",
+                "sceneId": "2coridor2",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+ {
+                "pitch": 2.1,
+                "yaw": 178,
+                "type": "scene",
+                "text": "3 этаж",
+                "sceneId": "3coridor2",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+ {
+                "pitch": 10.1,
+                "yaw": 178,
+                "type": "scene",
+                "text": "4 этаж",
+                "sceneId": "4coridor5",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+    "coridor2": {
+        "title": "Коридор 1 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/1 этаж/коридор2.jpg",
+        "hotSpots": [
+            {
+                "pitch": -3.8,
+                "yaw": 55.9,
+                "type": "scene",
+                "text": "Буфет",
+                "sceneId": "bufet"
+            },
+            {
+                "pitch": 0.1,
+                "yaw": -34,
+                "type": "scene",
+                "text": "Холл 1 этажа",
+                "sceneId": "hall",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -13.1,
+                "yaw": -210,
+                "type": "scene",
+                "text": "2 этаж",
+                "sceneId": "2coridor1",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -3.1,
+                "yaw": -210,
+                "type": "scene",
+                "text": "3 этаж",
+                "sceneId": "3coridor1",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": 7.1,
+                "yaw": -210,
+                "type": "scene",
+                "text": "4 этаж",
+                "sceneId": "4coridor1",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+
+        ]
+    },
+
+    "bufet": {
+        "title": "Буфет",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/1 этаж/Буфет.jpg",
+        "hotSpots": [
+            {
+                "pitch": 2.8,
+                "yaw": 182.9,
+                "type": "scene",
+                "text": "Коридор 1 этажа",
+                "sceneId": "coridor2"
+            },
+
+        ]
+    },
+
+    // ---- 2 ЭТАЖ -----
+
+    "2coridor1": {
+        "title": "Коридор 2 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/2 этаж/коридор1.jpg",
+        "hotSpots": [
+            {
+                "pitch": -9.8,
+                "yaw": 180.9,
+                "type": "scene",
+                "text": "1 этаж",
+                "sceneId": "coridor2"
+            },
+            {
+                "pitch": -1.8,
+                "yaw": 185.9,
+                "type": "scene",
+                "text": "3 этаж",
+                "sceneId": "3coridor1"
+            },
+            {
+                "pitch": 6.8,
+                "yaw": 185.9,
+                "type": "scene",
+                "text": "4 этаж",
+                "sceneId": "4coridor1"
+            },
+            {
+                "pitch": -1.1,
+                "yaw": 6,
+                "type": "scene",
+                "text": "Коридор 2 этажа",
+                "sceneId": "2coridor2",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+
+        ]
+    },
+
+    "2coridor2": {
+        "title": "Коридор 2 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/2 этаж/коридор2.jpg",
+        "hotSpots": [
+            {
+                "pitch": -15.8,
+                "yaw": 284.9,
+                "type": "scene",
+                "text": "1 этаж",
+                "sceneId": "coridor1"
+            },
+            {
+                "pitch": -1.8,
+                "yaw": 274,
+                "type": "scene",
+                "text": "3 этаж",
+                "sceneId": "3coridor2",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": 6.8,
+                "yaw": 274,
+                "type": "scene",
+                "text": "4 этаж",
+                "sceneId": "4coridor5",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -1.1,
+                "yaw": 91,
+                "type": "scene",
+                "text": "Коридор 2 этажа",
+                "sceneId": "2coridor1",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -1.1,
+                "yaw": -3,
+                "type": "scene",
+                "text": "Коридор 2 этажа",
+                "sceneId": "2uch",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -1.1,
+                "yaw": -254,
+                "type": "scene",
+                "text": "Класс историко-патриотического воспитания",
+                "sceneId": "205",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+ {
+                "pitch": -1.1,
+                "yaw": -276,
+                "type": "scene",
+                "text": "Зал судебных заседаний",
+                "sceneId": "210",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+ "210": {
+        "title": "Зал судебных заседаний",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 147,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/2 этаж/210.jpg",
+        "hotSpots": [
+            {
+                "pitch": -4.8,
+                "yaw": 122.9,
+                "type": "scene",
+                "text": "Коридор 2 этажа",
+                "sceneId": "2coridor2"
+            },
+        ]
+    },
+
+    "205": {
+        "title": "Класс историко-патриотического воспитания",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/2 этаж/205.jpg",
+        "hotSpots": [
+            {
+                "pitch": -8.8,
+                "yaw": 102.9,
+                "type": "scene",
+                "text": "Коридор 2 этажа",
+                "sceneId": "2coridor2"
+            },
+        ]
+    },
+
+    "2uch": {
+        "title": "Коридор 2 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/2 этаж/учебный отдел.jpg",
+        "hotSpots": [
+            {
+                "pitch": -14.8,
+                "yaw": 70.9,
+                "type": "scene",
+                "text": "Коридор 2 этажа",
+                "sceneId": "2coridor2"
+            },
+        ]
+    },
+
+    
+
+    // ---- 3 ЭТАЖ -----
+
+    "3coridor1": {
+        "title": "Коридор 3 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/3 этаж/коридор1.jpg",
+        "hotSpots": [
+            {
+                "pitch": -18.8,
+                "yaw": 188.9,
+                "type": "scene",
+                "text": "1 этаж",
+                "sceneId": "coridor2"
+            },
+            {
+                "pitch": -9.8,
+                "yaw": 188.9,
+                "type": "scene",
+                "text": "2 этаж",
+                "sceneId": "2coridor1"
+            },
+            {
+                "pitch": -0.8,
+                "yaw": 201,
+                "type": "scene",
+                "text": "4 этаж",
+                "sceneId": "4coridor1",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -1.1,
+                "yaw": 20,
+                "type": "scene",
+                "text": "Коридор 3 этажа",
+                "sceneId": "3coridor2",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -1.1,
+                "yaw": -40,
+                "type": "scene",
+                "text": "Информационно-библиотечный комплекс",
+                "sceneId": "bibl1",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+    "bibl1": {
+        "title": "Информационно-библиотечный комплекс",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/3 этаж/библиотека 1.jpg",
+        "hotSpots": [
+            {
+                "pitch": -1.8,
+                "yaw": 410.9,
+                "type": "scene",
+                "text": "Коридор 3 этажа",
+                "sceneId": "3coridor1"
+            },
+            {
+                "pitch": -1.8,
+                "yaw": 288.9,
+                "type": "scene",
+                "text": "Информационно-библиотечный комплекс",
+                "sceneId": "bibl2"
+            },
+        ]
+    },
+
+    "bibl2": {
+        "title": "Информационно-библиотечный комплекс",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/3 этаж/библиотека 2.jpg",
+        "hotSpots": [
+            {
+                "pitch": -1.8,
+                "yaw": 164.9,
+                "type": "scene",
+                "text": "Информационно-библиотечный комплекс",
+                "sceneId": "bibl1"
+            },
+        ]
+    },
+
+    "3coridor2": {
+        "title": "Коридор 3 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/3 этаж/коридор3.jpg",
+        "hotSpots": [
+            {
+                "pitch": -13.8,
+                "yaw": 284.9,
+                "type": "scene",
+                "text": "1 этаж",
+                "sceneId": "coridor1"
+            },
+ {
+                "pitch": -5.8,
+                "yaw": 284.9,
+                "type": "scene",
+                "text": "2 этаж",
+                "sceneId": "2coridor2"
+            },
+            {
+                "pitch": 2,
+                "yaw": 274,
+                "type": "scene",
+                "text": "4 этаж",
+                "sceneId": "4coridor5",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": 1.1,
+                "yaw": 99,
+                "type": "scene",
+                "text": "Коридор 3 этажа",
+                "sceneId": "3coridor1",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": 5.1,
+                "yaw": 10,
+                "type": "scene",
+                "text": "Коворкинг зона 3 этажа",
+                "sceneId": "3coridor3",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+    "3coridor3": {
+        "title": "Коворкинг зона 3 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/3 этаж/коридор2.jpg",
+        "hotSpots": [
+            {
+                "pitch": -1.8,
+                "yaw": 244.9,
+                "type": "scene",
+                "text": "Коридор 3 этажа",
+                "sceneId": "3coridor2"
+            },
+            {
+                "pitch": -1.8,
+                "yaw": 378.9,
+                "type": "scene",
+                "text": "Компьютерный класс",
+                "sceneId": "301"
+            },
+        ]
+    },
+
+    "301": {
+        "title": "Компьютерный класс",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/3 этаж/301.jpg",
+        "hotSpots": [
+            {
+                "pitch": -5.8,
+                "yaw": 135.9,
+                "type": "scene",
+                "text": "Коворкинг зона 3 этажа",
+                "sceneId": "3coridor3"
+            },
+
+        ]
+    },
+
+    // ---- 4 ЭТАЖ -----
+
+    "4coridor1": {
+        "title": "Коридор 4 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4 этаж/коридор.jpg",
+        "hotSpots": [
+            {
+                "pitch": -13.8,
+                "yaw": 156.9,
+                "type": "scene",
+                "text": "1 этаж",
+                "sceneId": "coridor2"
+            },
+            {
+                "pitch": -3.8,
+                "yaw": 156.9,
+                "type": "scene",
+                "text": "2 этаж",
+                "sceneId": "2coridor1"
+            },
+{
+                "pitch": -3.8,
+                "yaw": 306.9,
+                "type": "scene",
+                "text": "Тренажерный зал",
+                "sceneId": "419"
+            },
+            {
+                "pitch": 5.8,
+                "yaw": 156.9,
+                "type": "scene",
+                "text": "3 этаж",
+                "sceneId": "3coridor1"
+            },
+            {
+                "pitch": -1.1,
+                "yaw": 91,
+                "type": "scene",
+                "text": "Аудитория",
+                "sceneId": "423",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -5.1,
+                "yaw": 355,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor2",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+"419": {
+        "title": "Тренажерный зал",
+        "hfov": 110,
+        "pitch": -7,
+        "yaw": 1,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4%20%D1%8D%D1%82%D0%B0%D0%B6/419.jpg",
+        "hotSpots": [
+            {
+                "pitch": -1.8,
+                "yaw": 214.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor1"
+            },
+        ]
+    },
+
+    "4coridor2": {
+        "title": "Коридор 4 этажа",
+        "hfov": 110,
+        "pitch": -7,
+        "yaw": 1,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4 этаж/коридор3.jpg",
+        "hotSpots": [
+            {
+                "pitch": -5.8,
+                "yaw": 183.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor1"
+            },
+            {
+                "pitch": -5.1,
+                "yaw": 325,
+                "type": "scene",
+                "text": "Актовый зал",
+                "sceneId": "act1",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -5.1,
+                "yaw": 365,
+                "type": "scene",
+                "text": "Спортивный зал",
+                "sceneId": "sportzal",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+    "sportzal": {
+        "title": "Спортивный зал",
+        "hfov": 110,
+        "pitch": -17,
+        "yaw": 157,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4 этаж/спортзал.jpg",
+        "hotSpots": [
+            {
+                "pitch": 2.8,
+                "yaw": 107.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor3"
+            },
+            {
+                "pitch": -5.8,
+                "yaw": 329.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor2"
+            },
+        ]
+    },
+
+    "423": {
+        "title": "Аудитория",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4 этаж/423.jpg",
+        "hotSpots": [
+            {
+                "pitch": -5.8,
+                "yaw": 279.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor1"
+            },
+        ]
+    },
+
+    "act1": {
+        "title": "Актовый зал",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4 этаж/Актовый зал 1.jpg",
+        "hotSpots": [
+            {
+                "pitch": 1.8,
+                "yaw": 414.9,
+                "type": "scene",
+                "text": "Актовый зал",
+                "sceneId": "act2"
+            },
+            {
+                "pitch": -1.8,
+                "yaw": 206.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor2"
+            },
+        ]
+    },
+
+    "act2": {
+        "title": "Актовый зал",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4 этаж/Актовый зал 2.jpg",
+        "hotSpots": [
+            {
+                "pitch": 1,
+                "yaw": 191.9,
+                "type": "scene",
+                "text": "Актовый зал",
+                "sceneId": "act1"
+            },
+            {
+                "pitch": 5.8,
+                "yaw": 29.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor3"
+            },
+        ]
+    },
+
+    "4coridor3": {
+        "title": "Коридор 4 этажа",
+        "hfov": 110,
+        "pitch": -13,
+        "yaw": 77,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4 этаж/коридор2.jpg",
+        "hotSpots": [
+            {
+                "pitch": -1.8,
+                "yaw": 437.9,
+                "type": "scene",
+                "text": "Актовый зал",
+                "sceneId": "act2"
+            },
+            {
+                "pitch": -1.8,
+                "yaw": 394.4,
+                "type": "scene",
+                "text": "Спортивный зал",
+                "sceneId": "sportzal"
+            },
+            {
+                "pitch": -1.8,
+                "yaw": 208.4,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor5"
+            }
+        ]
+    },
+
+    "4coridor4": {
+        "title": "Коридор 4 этажа",
+        "hfov": 110,
+        "pitch": -13,
+        "yaw": 77,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4 этаж/коридор4.jpg",
+        "hotSpots": [
+            {
+                "pitch": -1.8,
+                "yaw": 224.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor5"
+            }
+        ]
+    },
+
+    "4coridor5": {
+        "title": "Коридор 4 этажа",
+        "hfov": 110,
+        "pitch": -13,
+        "yaw": 77,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4 этаж/коридор5.jpg",
+        "hotSpots": [
+            {
+                "pitch": -1.8,
+                "yaw": 342.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor4"
+            },
+            {
+                "pitch": -1.8,
+                "yaw": 427.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor3"
+            },
+            {
+                "pitch": 4.8,
+                "yaw": 248.4,
+                "type": "scene",
+                "text": "3 этаж",
+                "sceneId": "3coridor2"
+            },
+            {
+                "pitch": -4.8,
+                "yaw": 248.4,
+                "type": "scene",
+                "text": "2 этаж",
+                "sceneId": "2coridor2"
+            },
+            {
+                "pitch": -14.8,
+                "yaw": 248.4,
+                "type": "scene",
+                "text": "1 этаж",
+                "sceneId": "coridor1"
+            },
+            {
+                "pitch": -1.8,
+                "yaw": 155.4,
+                "type": "scene",
+                "text": "Компьютерный класс",
+                "sceneId": "405"
+            },
+        ]
+    },
+
+    "405": {
+        "title": "Компьютерный класс",
+        "hfov": 110,
+        "pitch": -13,
+        "yaw": 77,
+        "type": "equirectangular",
+        "panorama": "http://www.fa.ru/fil/yaroslavl/about/VirtualTour/PublishingImages/VirtualTourImages/4 этаж/405.jpg",
+        "hotSpots": [
+            {
+                "pitch": -1.8,
+                "yaw": 467.9,
+                "type": "scene",
+                "text": "Коридор 4 этажа",
+                "sceneId": "4coridor5"
+            },
+        ]
+    },
+}
+});
+</script>
+
+
