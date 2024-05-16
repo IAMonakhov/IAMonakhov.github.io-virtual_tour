@@ -1,0 +1,608 @@
+<div id="panorama1"></div>
+<script>
+pannellum.viewer('panorama1', {   
+"default": {
+    "firstScene": "vhod",
+    "sceneFadeDuration": 1000
+},
+"autoLoad": true,
+"scenes": {
+
+// ---- 1 ЭТАЖ -----
+
+    "vhod": {
+        "title": "Вход",
+        "hfov": 130,
+        "pitch": -3,
+        "yaw": 187,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/1%20%D1%8D%D1%82%D0%B0%D0%B6/1lp2.jpg",
+        "hotSpots": [
+            {
+                "pitch": 0.8,
+                "yaw": 185.9,
+                "type": "scene",
+                "text": "Холл 1 этажа",
+                "sceneId": "hall"
+            },
+{
+                "pitch": -5.8,
+                "yaw": 272.9,
+                "type": "scene",
+                "text": "2 этаж",
+                "sceneId": "2coridor1"
+            },
+{
+                "pitch": 5.8,
+                "yaw": 272.9,
+                "type": "scene",
+                "text": "3 этаж",
+                "sceneId": "3coridor1"
+            },
+        ]
+    },
+
+    "hall": {
+        "title": "Холл 1 этажа",
+        "hfov": 110,
+        "yaw": 5,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/1%20%D1%8D%D1%82%D0%B0%D0%B6/1hall.jpg",
+        "hotSpots": [
+            {
+                "pitch": 5.1,
+                "yaw": 37,
+                "type": "scene",
+                "text": "Вход",
+                "sceneId": "vhod",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -5.1,
+                "yaw": 126,
+                "type": "scene",
+                "text": "Холл 1 этажа",
+                "sceneId": "hall2",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": 1.1,
+                "yaw": -152,
+                "type": "scene",
+                "text": "Лестничная площадка 1 этажа",
+                "sceneId": "1lp2",
+                "targetYaw": -23,
+                "targetPitch": 2
+            }
+        ]
+    },
+
+ "1lp2": {
+        "title": "Лестничная площадка 1 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/1%20%D1%8D%D1%82%D0%B0%D0%B6/1lp1.jpg",
+        "hotSpots": [
+            {
+                "pitch": -2.8,
+                "yaw": 175.9,
+                "type": "scene",
+                "text": "Холл 1 этажа",
+                "sceneId": "hall"
+            },
+{
+                "pitch": 2.8,
+                "yaw": 89.9,
+                "type": "scene",
+                "text": "2 этаж",
+                "sceneId": "2coridor2"
+            },
+{
+                "pitch": 12.8,
+                "yaw": 89.9,
+                "type": "scene",
+                "text": "3 этаж",
+                "sceneId": "3coridor2"
+            },
+        ]
+    },
+
+    "hall2": {
+        "title": "Холл 1 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/1%20%D1%8D%D1%82%D0%B0%D0%B6/1hall3.jpg",
+        "hotSpots": [
+            {
+                "pitch": 12.8,
+                "yaw": 186.9,
+                "type": "scene",
+                "text": "Холл 1 этажа",
+                "sceneId": "hall"
+            },
+{
+                "pitch": 3.8,
+                "yaw": 325.9,
+                "type": "scene",
+                "text": "Холл 1 этажа",
+                "sceneId": "hall3"
+            },
+        ]
+    },
+
+"hall3": {
+        "title": "Холл 1 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/1%20%D1%8D%D1%82%D0%B0%D0%B6/1hall2.jpg",
+        "hotSpots": [
+            {
+                "pitch": -2.8,
+                "yaw": 122.9,
+                "type": "scene",
+                "text": "Холл 1 этажа",
+                "sceneId": "hall2"
+            },
+{
+                "pitch": -2.8,
+                "yaw": 297.9,
+                "type": "scene",
+                "text": "Учебная аудитория №10",
+                "sceneId": "10"
+            },
+        ]
+    },
+
+"10": {
+        "title": "Учебная аудитория №10",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 157,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/1%20%D1%8D%D1%82%D0%B0%D0%B6/10.jpg",
+        "hotSpots": [
+            {
+                "pitch": 2.8,
+                "yaw": 242.9,
+                "type": "scene",
+                "text": "Холл 1 этажа",
+                "sceneId": "hall3"
+            },
+        ]
+    },
+
+    // ---- 2 ЭТАЖ -----
+
+    "2coridor1": {
+        "title": "Лестничная площадка 2 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 10,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/2%20%D1%8D%D1%82%D0%B0%D0%B6/2lp2.jpg",
+        "hotSpots": [
+            {
+                "pitch": -11.8,
+                "yaw": 10.9,
+                "type": "scene",
+                "text": "1 этаж",
+                "sceneId": "vhod"
+            },
+            {
+                "pitch": -1.8,
+                "yaw": 185.9,
+                "type": "scene",
+                "text": "Холл 2 этажа",
+                "sceneId": "2hall3"
+            },
+            {
+                "pitch": -6.8,
+                "yaw": 278.9,
+                "type": "scene",
+                "text": "3 этаж",
+                "sceneId": "3coridor1"
+            },
+
+        ]
+    },
+
+    "2coridor2": {
+        "title": "Лестничная площадка 2 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/2%20%D1%8D%D1%82%D0%B0%D0%B6/2lp1.jpg",
+        "hotSpots": [
+            {
+                "pitch": -15.8,
+                "yaw": 324.9,
+                "type": "scene",
+                "text": "1 этаж",
+                "sceneId": "1lp2"
+            },
+            {
+                "pitch": 6.8,
+                "yaw": 364,
+                "type": "scene",
+                "text": "3 этаж",
+                "sceneId": "3coridor2",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+            {
+                "pitch": -6.8,
+                "yaw": 150,
+                "type": "scene",
+                "text": "Холл 2 этажа",
+                "sceneId": "2hall",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+"2hall": {
+        "title": "Холл 2 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 157,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/2%20%D1%8D%D1%82%D0%B0%D0%B6/2hall2.jpg",
+        "hotSpots": [
+            {
+                "pitch": 1.8,
+                "yaw": 268.9,
+                "type": "scene",
+                "text": "Лестничная площадка 2 этажа",
+                "sceneId": "2coridor2"
+            },
+{
+                "pitch": -3.8,
+                "yaw": 138.9,
+                "type": "scene",
+                "text": "Коридор 2 этажа",
+                "sceneId": "2coridor3"
+            },
+        ]
+    },
+
+ "2coridor3": {
+        "title": "Коридор 2 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/2%20%D1%8D%D1%82%D0%B0%D0%B6/2coridor.jpg",
+        "hotSpots": [
+            {
+                "pitch": -15.8,
+                "yaw": 45.9,
+                "type": "scene",
+                "text": "Холл 2 этажа",
+                "sceneId": "2hall"
+            },
+            {
+                "pitch": 0.8,
+                "yaw": 157,
+                "type": "scene",
+                "text": "Компьютерный класс №26",
+                "sceneId": "26",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+ "26": {
+        "title": "Компьютерный класс №26",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 197,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/2%20%D1%8D%D1%82%D0%B0%D0%B6/26.jpg",
+        "hotSpots": [
+            {
+                "pitch": 4.8,
+                "yaw": 17.9,
+                "type": "scene",
+                "text": "Коридор 2 этажа",
+                "sceneId": "2coridor3"
+            },
+            {
+                "pitch": 5.8,
+                "yaw": 192,
+                "type": "scene",
+                "text": "Учебная аудитория №21",
+                "sceneId": "21",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+ "21": {
+        "title": "Учебная аудитория №21",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 197,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/2%20%D1%8D%D1%82%D0%B0%D0%B6/21.jpg",
+        "hotSpots": [
+            {
+                "pitch": 0.8,
+                "yaw": 195.9,
+                "type": "scene",
+                "text": "Холл 2 этажа",
+                "sceneId": "2hall3"
+            },
+            {
+                "pitch": 2.8,
+                "yaw": 85,
+                "type": "scene",
+                "text": "Компьютерный класс №26",
+                "sceneId": "26",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+"2hall3": {
+        "title": "Холл 2 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 30,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/2%20%D1%8D%D1%82%D0%B0%D0%B6/2hall.jpg",
+        "hotSpots": [
+            {
+                "pitch": 180.8,
+                "yaw": 25.9,
+                "type": "scene",
+                "text": "Лестничная площадка 2 этажа",
+                "sceneId": "2coridor1"
+            },
+            {
+                "pitch": 0.8,
+                "yaw": -5,
+                "type": "scene",
+                "text": "Учебная аудитория №21",
+                "sceneId": "21",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+    // ---- 3 ЭТАЖ -----
+
+    "3coridor1": {
+        "title": "Лестничная площадка 3 этажа",
+        "hfov": 110,
+        "pitch": -6,
+        "yaw": -7,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/3%20%D1%8D%D1%82%D0%B0%D0%B6/3lp2.jpg",
+        "hotSpots": [
+            {
+                "pitch": -25.8,
+                "yaw": -5.9,
+                "type": "scene",
+                "text": "1 этаж",
+                "sceneId": "vhod"
+            },
+            {
+                "pitch": -15.8,
+                "yaw": -5.9,
+                "type": "scene",
+                "text": "2 этаж",
+                "sceneId": "2coridor1"
+            },
+            {
+                "pitch": -0.8,
+                "yaw": 201,
+                "type": "scene",
+                "text": "Холл 3 этажа",
+                "sceneId": "31",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+    "3coridor2": {
+        "title": "Лестничная площадка 3 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/3%20%D1%8D%D1%82%D0%B0%D0%B6/3lp1.jpg",
+        "hotSpots": [
+            {
+                "pitch": -25.8,
+                "yaw": 1.9,
+                "type": "scene",
+                "text": "1 этаж",
+                "sceneId": "1lp2"
+            },
+ {
+                "pitch": -11.8,
+                "yaw": 1.9,
+                "type": "scene",
+                "text": "2 этаж",
+                "sceneId": "2coridor2"
+            },
+            {
+                "pitch": 2,
+                "yaw": 165,
+                "type": "scene",
+                "text": "Холл 3 этажа",
+                "sceneId": "3hall",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+        ]
+    },
+
+ "3hall": {
+        "title": "Холл 3 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/3%20%D1%8D%D1%82%D0%B0%D0%B6/3hall.jpg",
+        "hotSpots": [
+            {
+                "pitch": 2.8,
+                "yaw": 138.9,
+                "type": "scene",
+                "text": "Лестничная площадка 3 этажа",
+                "sceneId": "3coridor2"
+            },
+ {
+                "pitch": -3.8,
+                "yaw": -31.9,
+                "type": "scene",
+                "text": "Учебная аудитория №34",
+                "sceneId": "34_1"
+            },
+        ]
+    },
+
+ "34_1": {
+        "title": "Учебная аудитория №34",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/3%20%D1%8D%D1%82%D0%B0%D0%B6/34_1.jpg",
+        "hotSpots": [
+            {
+                "pitch": 2.8,
+                "yaw": 134.9,
+                "type": "scene",
+                "text": "Учебная аудитория №34",
+                "sceneId": "34_2"
+            },
+ {
+                "pitch": -2.8,
+                "yaw": 14.9,
+                "type": "scene",
+                "text": "Холл 3 этажа",
+                "sceneId": "3hall"
+            },
+        ]
+    },
+
+"34_2": {
+        "title": "Учебная аудитория №34",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/3%20%D1%8D%D1%82%D0%B0%D0%B6/34_2.jpg",
+        "hotSpots": [
+            {
+                "pitch": 2.8,
+                "yaw": 112.9,
+                "type": "scene",
+                "text": "Компьютерный класс №33",
+                "sceneId": "33"
+            },
+ {
+                "pitch": 2.8,
+                "yaw": 1.9,
+                "type": "scene",
+                "text": "Учебная аудитория №34",
+                "sceneId": "34_1"
+            },
+        ]
+    },
+
+"33": {
+        "title": "Компьютерный класс №33",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/3%20%D1%8D%D1%82%D0%B0%D0%B6/33.jpg",
+        "hotSpots": [
+            {
+                "pitch": 2.8,
+                "yaw": 112.9,
+                "type": "scene",
+                "text": "Учебная аудитория №34",
+                "sceneId": "34_2"
+            },
+ {
+                "pitch": 2.8,
+                "yaw": 11.9,
+                "type": "scene",
+                "text": "Холл 3 этажа",
+                "sceneId": "31"
+            },
+        ]
+    },
+
+"31": {
+        "title": "Холл 3 этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/3%20%D1%8D%D1%82%D0%B0%D0%B6/31.jpg",
+        "hotSpots": [
+            {
+                "pitch": 2.8,
+                "yaw": 62.9,
+                "type": "scene",
+                "text": "Компьютерный класс №32",
+                "sceneId": "32"
+            },
+ {
+                "pitch": 2.8,
+                "yaw": 201.9,
+                "type": "scene",
+                "text": "Компьютерный класс №33",
+                "sceneId": "33"
+            },
+ {
+                "pitch": 2.8,
+                "yaw": -23.9,
+                "type": "scene",
+                "text": "Лестничная площадка 3 этажа",
+                "sceneId": "3coridor1"
+            },
+        ]
+    },
+
+"32": {
+        "title": "Компьютерный класс №32",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Кооперативная/3%20%D1%8D%D1%82%D0%B0%D0%B6/32.jpg",
+        "hotSpots": [
+            {
+                "pitch": 2.8,
+                "yaw": 195.9,
+                "type": "scene",
+                "text": "Холл 3 этажа",
+                "sceneId": "31"
+            },
+        ]
+    },
+
+   }
+});
+</script>
