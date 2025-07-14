@@ -272,35 +272,41 @@ pannellum.viewer('panorama', {
         "hotSpots": [
             {
                 "pitch": -9.8,
-                "yaw": 180.9,
+                "yaw": 80.9,
                 "type": "scene",
                 "text": "1 этаж",
                 "sceneId": "coridor2"
             },
             {
                 "pitch": -1.8,
-                "yaw": 185.9,
+                "yaw": 85.9,
                 "type": "scene",
                 "text": "3 этаж",
                 "sceneId": "3coridor1"
             },
             {
                 "pitch": 6.8,
-                "yaw": 185.9,
+                "yaw": 85.9,
                 "type": "scene",
                 "text": "4 этаж",
                 "sceneId": "4coridor1"
             },
             {
                 "pitch": -1.1,
-                "yaw": 6,
+                "yaw": -87.5,
                 "type": "scene",
                 "text": "Коридор 2 этажа",
                 "sceneId": "2coridor2",
                 "targetYaw": -23,
                 "targetPitch": 2
             },
-
+            {
+                "pitch": -1.1,
+                "yaw": -10,
+                "type": "scene",
+                "text": "Холл второго этажа",
+                "sceneId": "holl2"
+            },
         ]
     },
 
@@ -364,12 +370,22 @@ pannellum.viewer('panorama', {
                 "targetYaw": -23,
                 "targetPitch": 2
             },
+           
  {
                 "pitch": -1.1,
                 "yaw": -276,
                 "type": "scene",
                 "text": "Зал судебных заседаний",
                 "sceneId": "210",
+                "targetYaw": -23,
+                "targetPitch": 2
+            },
+ {
+                "pitch": -1.1,
+                "yaw": -263,
+                "type": "scene",
+                "text": "Кабинет 207",
+                "sceneId": "207",
                 "targetYaw": -23,
                 "targetPitch": 2
             },
@@ -394,6 +410,25 @@ pannellum.viewer('panorama', {
         ]
     },
 
+ "207": {
+        "title": "Учебная аудитория 207",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 147,
+        "type": "equirectangular",
+        "panorama": "./Полянки/2 этаж/207.jpg",
+        "hotSpots": [
+            {
+                "pitch": -5.8,
+                "yaw": -85.9,
+                "type": "scene",
+                "text": "Коридор 2 этажа",
+                "sceneId": "2coridor2"
+            },
+        ]
+    },
+
+    
     "205": {
         "title": "Класс историко-патриотического воспитания",
         "hfov": 110,
@@ -429,7 +464,23 @@ pannellum.viewer('panorama', {
             },
         ]
     },
-
+"holl2": {
+        "title": "Холл второго этажа",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "./Полянки/2 этаж/холл2этажа.jpg",
+        "hotSpots": [
+            {
+                "pitch": -114.8,
+                "yaw": 60.9,
+                "type": "scene",
+                "text": "Коридор 2 этажа",
+                "sceneId": "2coridor1"
+            },
+        ]
+    },
     
 
     // ---- 3 ЭТАЖ -----
@@ -492,18 +543,18 @@ pannellum.viewer('panorama', {
         "pitch": -3,
         "yaw": 117,
         "type": "equirectangular",
-        "panorama": "./Полянки/3 этаж/библиотека 1.jpg",
+        "panorama": "./Полянки/3 этаж/библиотека1.jpg",
         "hotSpots": [
             {
                 "pitch": -1.8,
-                "yaw": 410.9,
+                "yaw": 405.9,
                 "type": "scene",
                 "text": "Коридор 3 этажа",
                 "sceneId": "3coridor1"
             },
             {
-                "pitch": -1.8,
-                "yaw": 288.9,
+                "pitch": 4.5,
+                "yaw": 355.9,
                 "type": "scene",
                 "text": "Информационно-библиотечный комплекс",
                 "sceneId": "bibl2"
@@ -517,7 +568,7 @@ pannellum.viewer('panorama', {
         "pitch": -3,
         "yaw": 117,
         "type": "equirectangular",
-        "panorama": "./Полянки/3 этаж/библиотека 2.jpg",
+        "panorama": "./Полянки/3 этаж/библиотека2.jpg",
         "hotSpots": [
             {
                 "pitch": -1.8,
@@ -864,7 +915,7 @@ pannellum.viewer('panorama', {
     },
 
     "4coridor4": {
-        "title": "Коридор 4 этажа",
+        "title": "Коворкинг зона",
         "hfov": 110,
         "pitch": -13,
         "yaw": 77,
@@ -873,7 +924,7 @@ pannellum.viewer('panorama', {
         "hotSpots": [
             {
                 "pitch": -1.8,
-                "yaw": 224.9,
+                "yaw": 40.9,
                 "type": "scene",
                 "text": "Коридор 4 этажа",
                 "sceneId": "4coridor5"
@@ -891,49 +942,49 @@ pannellum.viewer('panorama', {
         "hotSpots": [
             {
                 "pitch": -1.8,
-                "yaw": 342.9,
+                "yaw": 10.9,
                 "type": "scene",
-                "text": "Коридор 4 этажа",
+                "text": "Коворкинг зона",
                 "sceneId": "4coridor4"
             },
             {
                 "pitch": -1.8,
-                "yaw": 427.9,
+                "yaw": 100.9,
                 "type": "scene",
                 "text": "Коридор 4 этажа",
                 "sceneId": "4coridor3"
             },
             {
                 "pitch": 4.8,
-                "yaw": 248.4,
+                "yaw": 280.4,
                 "type": "scene",
                 "text": "3 этаж",
                 "sceneId": "3coridor2"
             },
             {
                 "pitch": -4.8,
-                "yaw": 248.4,
+                "yaw": 280.4,
                 "type": "scene",
                 "text": "2 этаж",
                 "sceneId": "2coridor2"
             },
             {
                 "pitch": -14.8,
-                "yaw": 248.4,
+                "yaw": 280.4,
                 "type": "scene",
                 "text": "1 этаж",
                 "sceneId": "coridor1"
             },
             {
                 "pitch": -1.8,
-                "yaw": 155.4,
+                "yaw": 220.4,
                 "type": "scene",
                 "text": "Компьютерный класс",
                 "sceneId": "405"
             },
             {
                 "pitch": -1.8,
-                "yaw": 80.4,
+                "yaw": 115.4,
                 "type": "scene",
                 "text": "Мобильный класс",
                 "sceneId": "409"
